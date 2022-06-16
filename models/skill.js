@@ -28,7 +28,5 @@ function create(skill) {
 
 function deleteOne(id) {
     const idx = skills.indexOf(skills.find(skill => skill.skill === id));
-    console.log(id);
-    console.log(idx);
     skills.splice(idx, 1);
 }
