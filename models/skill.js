@@ -8,6 +8,7 @@ module.exports = {
     getAll,
     getOne,
     create,
+    deleteOne,
 };
 
 function getAll() {
@@ -23,4 +24,9 @@ function create(skill) {
     skill.learned = false;
     console.log(skill)
     skills.push(skill);
+}
+
+function deleteOne(id) {
+    const idx = skills.find(skill => skill.skill === id);
+    skills.splice(idx, 1);
 }
