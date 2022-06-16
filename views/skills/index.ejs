@@ -11,12 +11,12 @@
     <ul>
         <% skills.forEach(function(skill) { %>
             <li>
-              <a href="/skills/<%= skill.language %>"><%= skill.language %></a>
+              <a href="/skills/<%= skill.skill %>"><%= skill.skill %></a>
             - 
             <%= skill.learned ? 'Learned' : 'Not Learned' %>
             </li>
         <% }); %>
     </ul>
-    <a href="/todos/new">Add To-Do</a>
+    <a href="/skills/new">Add To-Do</a>
 </body>
 </html>
